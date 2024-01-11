@@ -25,6 +25,9 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    // controller/action/{id}
+    // book/index
+    // book/index/234
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
